@@ -5,5 +5,24 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2799147"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_uri}}/host",
+					"protocol": "http",
+					"host": [
+						"{{base_uri}}"
+					],
+					"path": [
+						"host"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
