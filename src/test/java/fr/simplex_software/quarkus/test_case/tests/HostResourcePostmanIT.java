@@ -17,6 +17,7 @@ public class HostResourcePostmanIT
   private static final Logger LOG = LoggerFactory.getLogger(HostResourcePostmanIT.class);
 
   private static final GenericContainer<?> postman = new GenericContainer<>("postman/newman")
+    .withNetworkMode("host")
     .withCopyFileToContainer(MountableFile.forClasspathResource("postman/test.postman_collection.json"),
       "/etc/newman/test.postman_collection.json")
     .withStartupCheckStrategy(new OneShotStartupCheckStrategy().withTimeout(Duration.ofSeconds(10)));
