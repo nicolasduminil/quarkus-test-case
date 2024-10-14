@@ -22,9 +22,6 @@ public class CurrentTimeResourceIT
   @Inject
   @RestClient
   TimeResourceClient timeResourceClient;
-  /*@Inject
-  @ConfigProperty(name = "base_uri/mp-rest/url")
-  String baseURI;*/
   private static final String FMT = "d MMM uuuu, HH:mm:ss XXX z";
 
   @Test
